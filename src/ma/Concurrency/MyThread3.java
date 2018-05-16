@@ -5,7 +5,7 @@ class TData {
 }
 class Work
 {
-	public void process(TData data,Integer numbers[])
+	public void process(TData data,Integer[] numbers)
 	{
 		for(int n:numbers)
 		{
@@ -27,7 +27,7 @@ public class MyThread3 extends Thread{
 		int n1=random.nextInt(1000);
 		int n2=random.nextInt(2000);
 		int n3=random.nextInt(3000);
-		Integer nums[]={n1,n2,n3};
+		Integer[] nums={n1,n2,n3};
 		work.process(data,nums);
 		System.out.println(String.valueOf(n1)+"+"+String.valueOf(n2)+"+"
 				+String.valueOf(n3)+"="+data.value);
